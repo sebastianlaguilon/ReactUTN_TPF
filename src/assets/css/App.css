@@ -1,0 +1,542 @@
+body {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+
+  /*FUENTES*/
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+
+#header {
+  height: 120px;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #ccc;
+  border-top: 5px solid #61dafb;
+}
+
+#brand {
+  font-weight: normal; /* Establece el peso de la fuente a normal (no negrita) */
+}
+
+
+.center{
+  width: 75%;
+  margin: 0px auto;
+}
+
+.clearfix{
+  clear:both;
+  float:none;
+}
+
+#logo {
+  width: 30%;
+  font-size: 30px;
+  float: left;
+  margin-top: 35px;
+}
+
+#logo img {
+  display: block;
+  float: left;
+  height: 60px;
+  margin-top: -9px;
+  margin-right: -10px;
+  animation: girar infinite 30s linear;
+}
+
+@keyframes girar {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#brand {
+  display: block;
+  margin: 0px;
+  float: left;
+}
+
+#menu{
+  width: 70%;
+  float:right;
+  font-size: 18px;
+}
+
+#menu ul{
+  line-height: 85px;
+  width: 60%;
+  float:right;
+}
+
+#menu ul li{
+  display: inline-block;
+  list-style: none;
+  height: 46px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#menu a{
+  text-decoration: none;
+  color: #444;
+  transition: 300ms all;
+}
+
+
+#menu a:hover{
+  color: #3cb2d3;
+}
+
+#slider {
+  background-image: url('../images/Tienda.jpg'); /* Reemplaza 'ruta/a/tu/imagen-fondo.jpg' con la ruta real de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del div */
+  background-position: center; /* Centra la imagen en el div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  /* Agrega otros estilos según tus preferencias, como color de texto, márgenes, etc. */
+}
+
+#slider{
+  width: 100%;
+  height: 350px;
+  /*line-height: 320px;*/
+  color: white;
+  text-shadow: 0px 0px 5px #444;
+}
+
+
+
+#slider h1{
+  margin-top: 0.2px;
+  padding: 0px;
+  padding-top: 130px;
+  text-align: center;
+}
+
+.btn-white{
+  display: block;
+  background: white;
+  color:rgb(88, 88, 88);
+  padding: 10px;
+  width: 100px;
+  height: 35px;
+  margin: 0px auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-shadow: none;
+  text-decoration: none;
+  line-height: 35px;
+  box-shadow: 0px 0px 5px rgb(88, 88, 88);
+  margin-top: 40px;
+  border-radius: 4px;
+  transition: 300ms all;
+}
+
+.btn-white:hover{
+  background: #444;
+  color:white;
+}
+
+#slider.slider-small{
+  height: 150px;
+}
+
+#slider.slider-small h1{
+  margin-top: 0.2px;
+  padding: 0px;
+  padding-top: 53px;
+}
+
+#content{
+  width: 70%;
+  float:left;
+  min-height: 650px;
+  margin-right: 20px;
+}
+
+#sidebar{
+  width: 25%;
+  float:left;
+}
+
+.sidebar-item{
+  background: #f7f7f7;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.sidebar-item h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  margin:0px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #eee;
+}
+
+.sidebar-item .btn{
+  margin: 0px auto;
+  margin-top: 10px;
+}
+
+.btn{
+ display: block;
+ background: black;
+ color: white;
+ padding: 15px; 
+ font-weight: bold;
+ text-transform: uppercase;
+ font-size: 14px;
+ text-decoration: none;
+ max-width: 120px;
+ transition: 300ms all;
+ border: none;
+ cursor:pointer;
+}
+
+
+.btn-success{
+  background: rgb(23, 150, 19);
+
+}
+
+.btn-success:hover{
+  background:black;
+}
+
+.mid-form{
+  width: 50%;
+  margin: 0px auto;
+}
+
+.mid-form label{
+  display: block;
+  float:left;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+
+}
+
+.form-group label {
+  text-align: left;
+}
+
+
+
+input[type="text"],
+textarea{
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin-bottom: 5px;
+  transition: 300ms all;
+}
+
+input[type="text"]:focus,
+textarea:focus{
+  box-shadow: 0px 0px 5px #eee inset;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+}
+
+.radibuttons{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float:left;
+  font-size: 18px;
+}
+
+
+#footer{
+  background: #f7f7f7;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  color: #444;
+}
+
+#footer p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.article-item{
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.article-item .image-wrap {
+  width: 130px;
+  height: 130px;
+  overflow:hidden;
+  float:left;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+}
+
+.article-item .image-wrap img{
+  height: 100%;
+  text-align: center;
+}
+
+.article-item h2{
+  display: block;
+  width:100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 7px;
+}
+
+.article-item .price{
+  display: block;
+  width: 100%;
+  color: rgb(122, 122, 122);
+}
+
+.article-item a{
+  display: block;
+  color: #444;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.article-item a:hover{
+  text-decoration: underline;
+}
+
+.subheader{
+  font-size: 38px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.article-detail .image-wrap{
+  float:none;
+  width:100%;
+  height: 300px;
+}
+
+.article-detail .image-wrap img{
+  width: 100%;
+  height: auto;
+}
+
+.article-detail .subheader{
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border:none;
+}
+
+/*RESPONSIVE*/
+
+/*Desde la anchura 963px hasta la anchura 1488px de pantalla*/
+@media (max-width: 1488px){
+  /*Se ejecutarán estos estilos*/
+  .center{
+      width: 85%;
+  }
+}
+
+/*Desde la anchura 0px hasta la anchura 963px de pantalla*/
+@media (max-width: 1314px){
+  .center{
+      width: 95%;
+  }
+
+  #menu ul{
+      width: auto;
+  }
+}
+
+@media (max-width: 797px){
+  #logo{
+      float:none;
+      width: 240px;
+      margin: 0px auto;
+      margin-top: 20px;
+  }
+
+  #menu,
+  #menu ul{
+     clear:both;
+     float:none;
+     width: 100%;
+     margin: 0px;
+     padding: 0px;
+     line-height: 43px;
+  }
+
+  #content{
+      float:none;
+      width: 100%;
+  }
+
+  #sidebar{
+      float:none;
+      width: 60%;
+      margin: 0px auto;
+      margin-bottom: 50px;
+  }
+
+  #slider h1{
+      padding-top: 115px;
+      font-size: 25px;
+  }
+
+  .mid-form{
+      width: 70%;
+  }
+}
+
+@media (max-width: 497px){
+  #header{
+      min-height: 130px;
+      overflow:hidden;
+  }
+
+  #menu,
+  #menu ul{
+      line-height: 50px;
+  }
+
+  #menu ul li{
+      margin-left: 7px;
+      margin-right: 7px;
+  }
+
+  #slider{
+      height: 180px;
+  }
+
+  #slider h1{
+      font-size: 19px;
+      padding-top: 30px;
+  }
+
+  #slider .btn-white{
+      margin-top: 20px;
+  }
+
+  #slider.slider-small{
+      height: 100px;
+  }
+
+  #slider.slider-small h1{
+     padding-top: 35px;
+  }
+}
+
+
+.cargando {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.25rem;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cargando p {
+  margin: 0;
+}
+
+.barra-progreso {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: 0;
+}
+
+.barra-progreso .avance {
+  height: 100%;
+  background-color: #4CAF50;
+  animation: carga 0.6s linear infinite;
+}
+
+@keyframes carga {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+/* Estilo base para el botón */
+.button-comprar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Borde redondeado */
+  text-decoration: none; /* Sin subrayado */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.2s ease; /* Transición suave al pasar el ratón */
+}
+
+/* Estilo cuando el cursor está sobre el botón */
+.button-comprar:hover {
+  background-color: #0056b3; /* Color de fondo alterno al pasar el ratón */
+}
+
+.carrito-info {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  background-color: #007bff;
+  padding: 10px 20px;
+}
+
+.carrito-info strong {
+  font-weight: bold;
+}
+
+.carrito-info span {
+  font-style: italic;
+  color: white;
+}
+
+
+
+
+.pconstruc {
+  font-size: 25px;
+  color: #666;
+  text-align: center;
+
+  padding-top: 20px;
+}
+
